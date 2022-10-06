@@ -1,8 +1,8 @@
 ﻿using static System.Console;
 
 Write("Введите ряд чисел через пробел: ");
-string[] parameters = ReadLine()!.Split(" ", StringSplitOptions.RemoveEmptyEntries);
-WriteLine($"Количество положительных чисел = {ArrayZeroSum(parameters)}");
+string[] input = ReadLine()!.Split(" ", StringSplitOptions.RemoveEmptyEntries);
+WriteLine($"Количество положительных чисел = {ArrayZeroSum(input)}");
 
 int ArrayZeroSum(string[] inArray)
 {
