@@ -23,6 +23,6 @@ public class Helper
     }
     public static string[] GetUserInput(string separator = " ")
     {
-        return ReadLine()!.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+        return Console.ReadLine()!.Split(separator, StringSplitOptions.RemoveEmptyEntries);
     }
 }
