@@ -1,6 +1,9 @@
 ﻿namespace Lib;
 public class Helper
 {
+    ///<summary>
+    ///Метод возвращает количество положительных чисел в строковом массиве
+    ///</summary>
     public static int ArrayZeroSum(string[] inArray)
     {
         int result = 0;
@@ -10,6 +13,9 @@ public class Helper
         }
         return result;
     }
+    ///<summary>
+    ///Метод возвращает координаты пересечения двух прямых
+    ///</summary>
     public static float[] LineIntersection(float b1, float k1, float b2, float k2)
     {
         if (k1 == k2) return null!;
@@ -21,6 +27,9 @@ public class Helper
 
         return result;
     }
+    ///<summary>
+    ///Метод возвращает ввод пользователя, преобразованный в строковый массив
+    ///</summary>
     public static string[] GetUserInput(string separator = " ")
     {
         return Console.ReadLine()!.Split(separator, StringSplitOptions.RemoveEmptyEntries);
